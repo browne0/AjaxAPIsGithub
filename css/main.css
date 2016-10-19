@@ -1,0 +1,52 @@
+body {
+  background-color: rgba(225, 225, 225, 0.75);
+  font-family: 'Open Sans', sans-serif; }
+
+.headerwrap {
+  margin-top: 15px;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  padding: 15px;
+  -webkit-box-shadow: 4px 4px 7px #B7B7B7;
+  -moz-box-shadow: 4px 4px 7px #B7B7B7;
+  box-shadow: 4px 4px 7px #B7B7B7; }
+  .headerwrap h1 {
+    margin: 0px 0px 15px 0px;
+    text-align: center; }
+  .headerwrap p {
+    display: inline-block; }
+  .headerwrap input#username {
+    width: 569px;
+    display: block;
+    height: 2em;
+    padding-left: 0.5em;
+    margin-bottom: 10px; }
+  .headerwrap button {
+    padding: 0.25em 15px; }
+  .headerwrap #githubApiData {
+    color: rgba(55, 55, 55, 0.75); }
+    .headerwrap #githubApiData h2 {
+      float: left; }
+    .headerwrap #githubApiData span {
+      font-size: 24px;
+      float: left;
+      margin: 22px 0px 0px 5px;
+      line-height: 1.1;
+      display: block;
+      font-style: italic; }
+    .headerwrap #githubApiData img {
+      border: 1px solid black;
+      padding: 5px;
+      border-radius: 5px; }
+    .headerwrap #githubApiData .content p {
+      vertical-align: top;
+      margin-left: 10px;
+      color: #333; }
+    .headerwrap #githubApiData .repolist {
+      margin-top: 15px; }
+      .headerwrap #githubApiData .repolist .repo {
+        margin-top: 5px;
+        margin-left: 15px; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,96 @@
+
+// IMPORTS
+@import 'bourbon';
+
+// MIXINS
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+	@if $inset {
+		-webkit-box-shadow:inset $top $left $blur $color;
+		-moz-box-shadow:inset $top $left $blur $color;
+		box-shadow:inset $top $left $blur $color;
+	}
+
+	@else {
+		-webkit-box-shadow: $top $left $blur $color;
+		-moz-box-shadow: $top $left $blur $color;
+		box-shadow: $top $left $blur $color;
+	}
+}
+
+$inputwidth: 579px;
+
+
+body {
+	background-color: rgba(225,225,225,0.75);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.headerwrap {
+	margin-top: 15px;
+	width: 100%;
+	overflow: hidden;
+	background-color: white;
+	padding: 15px;
+	@include box-shadow(4px, 4px, 7px, #B7B7B7)
+
+	h1 {
+		margin: 0px 0px 15px 0px;
+		text-align: center;
+	}
+
+	p {
+		display: inline-block;
+	}
+
+	input#username {
+		width: $inputwidth - 10px;
+		display: block;
+		height: 2em;
+		padding-left: 0.5em;
+		margin-bottom: 10px;
+	}
+
+	button {
+		padding: 0.25em 15px
+	}
+
+	#githubApiData {
+		color: rgba(55,55,55, 0.75);
+
+		h2 {
+			float: left;
+		}
+
+		span {
+			font-size: 24px;
+			float:left;
+			margin: 22px 0px 0px 5px;
+			line-height: 1.1;
+			display: block;
+			font-style: italic;
+		}
+
+		img {
+			border: 1px solid black;
+			padding: 5px;
+			border-radius: 5px;
+		}
+
+		.content {
+			p {
+				vertical-align: top;
+				margin-left: 10px;
+				color: #333;
+			}
+		}
+
+		.repolist {
+			margin-top: 15px;
+
+			.repo {
+				margin-top: 5px;
+				margin-left: 15px;
+			}
+		}
+	}
+}
